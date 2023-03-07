@@ -2,3 +2,75 @@ html {
   height: 100%;
   width: 100%;
 }
+
+table img {
+  width: 32px; 
+  height: 32px; 
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+}
+
+.button1:hover {
+  background-color: deepskyblue;
+  color: white;
+}
+
+.button2 {
+  font: bebas-neue;
+  background-color: white; 
+  color: black; 
+}
+
+.button2:hover {
+  font-style: bold;
+  background-color: black;
+  color: red;
+}
+
+.button3 {
+  background-color: white; 
+  color: black;
+}
+
+.button3:hover {
+  background-color: #034ee2;
+  color: white;
+}
+
+.button4 {
+  background-color: white; 
+  color: black; 
+}
+
+.button4:hover {
+  background-color: green;
+  color: white;
+}
