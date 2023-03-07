@@ -3,51 +3,179 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Ehizokhale's portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portsite</title>
   <link rel="icon" type="image/x-icon" href="/mycollection/png/001-letter-e.png">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  Sites and references:
+  Sites and revenues:
   <table>
-  <thead>
-    <tr>
-      <th>Logo</th>
-      <th>Company</th>
-      <th>Revenue 2020</th>
-      <th>Revenue 2021</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitter-square2-512.png" alt="Twitter icon"></td>
-      <td ><button class="button button1">Tweet!</button></td>
-      <td>$3.72 billion</td>
-      <td>$3.9 billion</td>
-    </tr>
-    <tr>
-      <td><img src="mycollection/png/003-netflix.png"></td>
-      <td><button class="button button2">NETFLIX</button></td>
-      <td>$25 billion</td>
-      <td>$29.6 billion</td>
-    </tr>
-    <tr>
-      <td><img src="https://cdn4.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Facebook_svg-512.png" alt="Facebook icon"></td>
-      <td><button class="button button3">Facebook</button></td>
-      <td>$85.97 billion</td>
-      <td>$119.69 billion</td>
-    </tr>
-    <tr>
-      <td><img src="https://cdn3.iconfinder.com/data/icons/social-icons-33/128/WhatsApp-512.png" alt="WhatsApp icon"></td>
-      <td><button class="button button4">Whatsapp</button></td>
-      <td>$2 billion</td>
-      <td>$2.5 billion</td>
-    </tr>
-  </tbody>
-</table>
- 
+    <thead>
+      <tr>
+        <th>Logo</th>
+        <th>Company</th>
+        <th>Revenue 2020</th>
+        <th>Revenue 2021</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitter-square2-512.png" alt="Twitter icon"></td>
+        <td ><button class="button button1">Tweet!</button></td>
+        <td>$3.72 billion</td>
+        <td>$3.9 billion</td>
+      </tr>
+      <tr>
+        <td><img src="mycollection/png/003-netflix.png"></td>
+        <td><button class="button button2">NETFLIX</button></td>
+        <td>$25 billion</td>
+        <td>$29.6 billion</td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn4.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Facebook_svg-512.png" alt="Facebook icon"></td>
+        <td><button class="button button3">Facebook</button></td>
+        <td>$85.97 billion</td>
+        <td>$119.69 billion</td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn3.iconfinder.com/data/icons/social-icons-33/128/WhatsApp-512.png" alt="WhatsApp icon"></td>
+        <td><button class="button button4">Whatsapp</button></td>
+        <td>$2 billion</td>
+        <td>$2.5 billion</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <form>
+    <h2>Things You Need to Know</h2>
+      <ul>
+        <li>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required placeholder="Your funky username">
+        </li>
+        <li>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="8" required placeholder="Keep it funky, but secure">
+        </li>
+        <li>
+          <label for="color">Color:</label>
+          <input type="color" id="color" name="color" value="#ff69b4">
+        </li>
+        <li>
+          <label for="range">Range</label>
+          <input type="range" id="range" name="range" min="1" max="10" value="5" step="1">
+        </li>
+        <li>
+          <label for="checkbox">Checkbox:</label>
+          <input type="checkbox" id="checkbox" name="checkbox" checked>
+        </li>
+        <li>
+          <label for="select">Song selection:</label>
+          <select id="select" name="select">
+            <option value="u-can't-touch-this">U Can't Touch This</option>
+            <option value="funky-town">Funky Town</option>
+            <option value="super-freak">Super Freak</option>
+          </select>
+        </li>
+      </ul>
+    <button type="submit">Submit</button>
+  </form>
+
+  <form action="#" method="post" autocomplete="on" enctype="multipart/form-data">
+      <legend>Personal Information:</legend>
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name" autofocus>
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+          </li>
+          <li>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required placeholder="Create a password">
+          </li>
+          <li>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" minlength="8" required placeholder="Confirm your password">
+          </li>
+          <li>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+          </li>
+          <li>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+          </li>
+          <li>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required placeholder="Enter your address"></textarea>
+          </li>
+          <li>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </li>
+          <li>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color" value="#ff69b4">
+          </li>
+          <li>
+            <label for="range">Level:</label>
+            <input type="range" id="range" name="range" min="1" max="10" value="5" step="1">
+          </li>
+          <li>
+            <label for="checkbox">Agree to Terms:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" required>
+            <label for="checkbox">I agree to the terms and conditions.</label>
+          </li>
+          <li>
+            <label for="select">Favorite Fruit:</label>
+            <select id="select" name="select" multiple>
+              <option value="apple">Apple</option>
+              <option value="banana">Banana</option>
+              <option value="orange">Orange</option>
+              <option value="kiwi">Kiwi</option>
+            </select>
+          </li>
+          <li>
+            <label for="file">Upload a File:</label>
+            <input type="file" id="file" name="file">
+          </li>
+        </ul>
+      <button type="submit">Submit</button>
+  </form>
+
+
+  <ul>
+    <li>Coffee</li>
+    <ol>
+      <li value="2">Cappuchino</li>
+      <li>Mochachino</li>
+      <li>Double Expresso</li>
+    </ol>
+    <li>Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea
+          <ul>
+            <li>China</li>
+            <li>Africa</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Milk</li>
+</ul>
+
+  <a></a>
   <script src="script.js"></script>
 
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
