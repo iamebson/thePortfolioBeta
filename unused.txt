@@ -1,0 +1,251 @@
+<button class="button button1">
+<button class="button button2">
+<button class="button button3">
+<button class="button button4">
+
+<form>
+    <h2>Things You Need to Know</h2>
+      <ul>
+        <li>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required placeholder="Your funky username">
+        </li>
+        <li>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="8" required placeholder="Keep it funky, but secure">
+        </li>
+        <li>
+          <label for="color">Color:</label>
+          <input type="color" id="color" name="color" value="#ff69b4">
+        </li>
+        <li>
+          <label for="range">Range</label>
+          <input type="range" id="range" name="range" min="1" max="10" value="5" step="1">
+        </li>
+        <li>
+          <label for="checkbox">Checkbox:</label>
+          <input type="checkbox" id="checkbox" name="checkbox" checked>
+        </li>
+        <li>
+          <label for="select">Song selection:</label>
+          <select id="select" name="select">
+            <option value="u-can't-touch-this">U Can't Touch This</option>
+            <option value="funky-town">Funky Town</option>
+            <option value="super-freak">Super Freak</option>
+          </select>
+        </li>
+      </ul>
+    <button type="submit">Submit</button>
+  </form>
+
+  <form action="#" method="post" autocomplete="on" enctype="multipart/form-data">
+      <legend>Personal Information:</legend>
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name" autofocus>
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+          </li>
+          <li>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required placeholder="Create a password">
+          </li>
+          <li>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" minlength="8" required placeholder="Confirm your password">
+          </li>
+          <li>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+          </li>
+          <li>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+          </li>
+          <li>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required placeholder="Enter your address"></textarea>
+          </li>
+          <li>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </li>
+          <li>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color" value="#ff69b4">
+          </li>
+          <li>
+            <label for="range">Level:</label>
+            <input type="range" id="range" name="range" min="1" max="10" value="5" step="1">
+          </li>
+          <li>
+            <label for="checkbox">Agree to Terms:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" required>
+            <label for="checkbox">I agree to the terms and conditions.</label>
+          </li>
+          <li>
+            <label for="select">Favorite Fruit:</label>
+            <select id="select" name="select" multiple>
+              <option value="apple">Apple</option>
+              <option value="banana">Banana</option>
+              <option value="orange">Orange</option>
+              <option value="kiwi">Kiwi</option>
+            </select>
+          </li>
+          <li>
+            <label for="file">Upload a File:</label>
+            <input type="file" id="file" name="file">
+          </li>
+        </ul>
+      <button type="submit">Submit</button>
+  </form>
+
+.button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+}
+
+.button1:hover {
+  background-color: deepskyblue;
+  color: white;
+}
+
+.button2 {
+  font: bebas-neue;
+  background-color: white; 
+  color: black; 
+}
+
+.button2:hover {
+  font-style: bold;
+  background-color: black;
+  color: red;
+}
+
+.button3 {
+  background-color: white; 
+  color: black;
+}
+
+.button3:hover {
+  background-color: #034ee2;
+  color: white;
+}
+
+.button4 {
+  background-color: white; 
+  color: black; 
+}
+
+.button4:hover {
+  background-color: green;
+  color: white;
+}
+
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+Parts of the code I have no current NEED for
