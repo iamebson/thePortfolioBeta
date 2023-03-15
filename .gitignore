@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+# Replit files 
+.nix
 .replit
 
 # Distribution / packaging
